@@ -1,0 +1,146 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background-color: #d3d3d3;  /* Lighter gray */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+    border: none;  /* Remove border */
+    box-shadow: none;  /* Remove box shadow if present */
+}
+
+.btn:hover {
+    background-color: #c0c0c0;  /* Even lighter gray for hover effect */
+    transform: scale(1.1);  /* Increases the size */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Parallax Effects */
+.intro-image, .packaging-image, .tutorials-image {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.intro-image {
+    background-image: url('../img/img1.jpg');
+}
+
+.packaging-image {
+    background-image: url('../img/img2.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);  /* Example shape */
+}
+
+.tutorials-image {
+    background-image: url('../img/img3.jpg');
+}
+
+.intro-image__text, .packaging-image__text, .tutorials-image__text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    animation: fade-in 2s ease-in-out forwards;
+}
+
+/* Text Content Blocks */
+.intro-text, .packaging-text {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.heading-solid.beige {
+    color: #d2a679;
+}
+
+.heading-solid.green {
+    color: #4caf50;
+}
+
+/* Social Media Links */
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Adds space between logos */
+}
+
+.contact li {
+    display: inline-block;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper a {
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper a:hover {
+    color: #007bff;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
